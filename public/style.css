@@ -260,15 +260,24 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+}
+
+.two .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about {
   margin-top: 5%;
-  padding: 60px;
+  padding: 0 50px 0 50px
 }
+
 
 .about p {
   font-size: 25px;
+  padding: 25px 0 25px 0;
+  width: 100%;
 }
 
 /* 
@@ -313,9 +322,9 @@ Trzecia sekcja */
 }
 
 .logos-2 {
-  position: absolute;
+  display: flex;
 
-  bottom: 20px;
+  top: 5%;
   justify-content: space-between;
   align-items: center;
 }
