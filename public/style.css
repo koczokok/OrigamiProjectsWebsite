@@ -48,40 +48,94 @@ body::-webkit-scrollbar {
   display: flex;
   position: fixed;
   width: 100%;
-  padding-top: 1vh;
+  padding-top: 10px;
+  
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  
+  background-color: #fff;
+  height: 116px;
   transition: 1s;
   z-index: 98;
   font-family: "Poppins", sans-serif;
   min-width: 200px;
+  
 }
 .scrolled-1 {
   background-color: #f3dbc3;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-.logo {
-  color: rgb(26, 24, 24);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+
+.logo{
+  width: 430px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  
 }
 
-.logo a {
-  text-decoration: none;
-  color: white;
+
+
+.logo h4 {
+  color: #2b2149;
+  text-transform: uppercase;
+  margin: 0 !important;
+ 
+ font-family: industry-inc-base,sans-serif;
+ font-weight: 400;
+ font-style: normal;
+  font-size: 45px;
+  display: flex;
+  align-self: center;
 }
+
+.logo a, .logo a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+
+}
+
+
 
 .nav-links {
   display: flex;
-  width: 50%;
+  justify-content: space-between;
+ width: 1132px;
+  height: 58px;
+  padding: 0;
 
-  justify-content: space-around;
+
+
+  
+}
+
+.nav-links div {
+  border: 1px solid #F0F0F0;
+  border-radius: 4px; 
+  width: 184px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  
+}
+
+#kontakt-div{
+  background-color: #5e548e;
+  
+}
+
+#kontakt-div a{
+  background-color: #5e548e;
+  color:#fff ;
 }
 
 .nav-links li {
   list-style: none;
+  color: #2b2149;
+
+
 }
 
 .nav-links a {
@@ -154,7 +208,7 @@ body::-webkit-scrollbar {
 }
 
 /* Media Queries*/
-
+/* 
 @media screen and (max-width: 768px) {
   .burger {
     display: block;
@@ -187,7 +241,7 @@ body::-webkit-scrollbar {
   .nav-links {
     width: 70%;
   }
-}
+} */
 
 /* Intro przejscie */
 
@@ -232,7 +286,10 @@ section {
 /* Pierwsza Sekcja*/
 
 .one {
-  background: url("./imgs/Origami-to-doskonaly-sposob-na-zabicie-czasu.-Zobacz-jak-je-zrobic-krok-po-kroku_article.jpg");
+  background: transparent url('./imgs/logooficjalnie.png') 0% 0% no-repeat padding-box;
+  top: 155px;
+left: -440px;
+  opacity: 0.38;  
   background-size: cover;
   min-height: 100vh;
   display: flex;
