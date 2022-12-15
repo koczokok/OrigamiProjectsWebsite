@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
   position: fixed;
   width: 100%;
   padding-top: 10px;
-  
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   justify-content: space-around;
   align-items: center;
   
@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
 .nav-links {
   display: flex;
   justify-content: space-between;
- width: 1132px;
+ width: 60%;
   height: 58px;
   padding: 0;
 
@@ -145,6 +145,13 @@ body::-webkit-scrollbar {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+}
+
+.nav-links a, .nav-links a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+
 }
 
 /* Burger */
@@ -286,15 +293,29 @@ section {
 /* Pierwsza Sekcja*/
 
 .one {
-  background: transparent url('./imgs/logooficjalnie.png') 0% 0% no-repeat padding-box;
+  /* background: transparent url('./imgs/logooficjalnie.png') 0% 0% no-repeat padding-box;
   top: 155px;
 left: -440px;
   opacity: 0.38;  
-  background-size: cover;
-  min-height: 100vh;
+  background-size: cover; */
+ 
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.one img{
+  position: absolute;
+  z-index: -1 ;
+  top: 155px;
+left: -440px;
+width: 1994px;
+height: 1371px;
+object-fit: fill;
+opacity: 0.33;
 }
 
 .big-text {
