@@ -158,11 +158,12 @@ body::-webkit-scrollbar {
 
 .burger {
   display: none;
+
 }
 .burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(235, 235, 235);
+  width: 30px;
+  height: 5px;
+  background-color: #2b2149;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -173,7 +174,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 9px);
 }
 
 .toggle .line2 {
@@ -181,7 +182,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -9px);
 }
 
 /* Navbar mobile */
@@ -189,7 +190,7 @@ body::-webkit-scrollbar {
 .mobile-nav-links {
   position: fixed;
   left: 100%;
-  top: 8vh;
+  top: 116px;
   height: 92vh;
   z-index: 98;
   background-color: black;
@@ -215,19 +216,25 @@ body::-webkit-scrollbar {
 }
 
 /* Media Queries*/
-/* 
+
 @media screen and (max-width: 768px) {
   .burger {
     display: block;
+    text-align: center;
+    margin-top: -10px;
   }
 
   .nav-links {
     display: none;
   }
 
-  h4 {
-    font-size: 1rem !important;
-    text-align: center;
+  .logo {
+    height: 100%;
+  }
+
+  .logo h4 {
+    font-size: 2.5rem ;
+   
   }
 
   .two p {
@@ -243,7 +250,7 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
   }
 }
-
+/*
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 70%;
@@ -293,12 +300,6 @@ section {
 /* Pierwsza Sekcja*/
 
 .one {
-  /* background: transparent url('./imgs/logooficjalnie.png') 0% 0% no-repeat padding-box;
-  top: 155px;
-left: -440px;
-  opacity: 0.38;  
-  background-size: cover; */
- 
   height: 100vh;
   display: flex;
   justify-content: center;
