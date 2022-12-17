@@ -46,42 +46,96 @@ body::-webkit-scrollbar {
 /* Navbar komputer */
 .nav {
   display: flex;
-  position: fixed;
+  position: fixed; 
   width: 100%;
-  padding-top: 1vh;
+  padding-top: 10px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  
+  background-color: #fff;
+  height: 116px;
   transition: 1s;
   z-index: 98;
   font-family: "Poppins", sans-serif;
   min-width: 200px;
+  
 }
-.scrolled-1 {
+/* .scrolled-1 {
   background-color: #f3dbc3;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-}
-.logo {
-  color: rgb(26, 24, 24);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+} */
+
+.logo{
+  width: 430px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  
 }
 
-.logo a {
-  text-decoration: none;
-  color: white;
+
+
+.logo h4 {
+  color: #2b2149;
+  text-transform: uppercase;
+  margin: 0 !important;
+ 
+ font-family: industry-inc-base,sans-serif;
+ font-weight: 400;
+ font-style: normal;
+  font-size: 45px;
+  display: flex;
+  align-self: center;
 }
+
+.logo a, .logo a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+
+}
+
+
 
 .nav-links {
   display: flex;
-  width: 50%;
+  justify-content: space-between;
+ width: 60%;
+  height: 58px;
+  padding: 0;
 
-  justify-content: space-around;
+
+
+  
+}
+
+.nav-links div {
+  border: 1px solid #F0F0F0;
+  border-radius: 4px; 
+  width: 184px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  
+}
+
+#kontakt-div{
+  background-color: #5e548e;
+  
+}
+
+#kontakt-div a{
+  background-color: #5e548e;
+  color:#fff ;
 }
 
 .nav-links li {
   list-style: none;
+  color: #2b2149;
+
+
 }
 
 .nav-links a {
@@ -93,15 +147,23 @@ body::-webkit-scrollbar {
   font-size: 14px;
 }
 
+.nav-links a, .nav-links a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+
+}
+
 /* Burger */
 
 .burger {
   display: none;
+
 }
 .burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(235, 235, 235);
+  width: 30px;
+  height: 5px;
+  background-color: #2b2149;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -112,7 +174,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 9px);
 }
 
 .toggle .line2 {
@@ -120,7 +182,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -9px);
 }
 
 /* Navbar mobile */
@@ -128,10 +190,11 @@ body::-webkit-scrollbar {
 .mobile-nav-links {
   position: fixed;
   left: 100%;
-  top: 8vh;
+  top: 116px;
   height: 92vh;
   z-index: 98;
-  background-color: black;
+  background-color: #2b2149
+  ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,18 +218,36 @@ body::-webkit-scrollbar {
 
 /* Media Queries*/
 
+@media screen and (max-width: 530px) {
+  .logo h4 {
+    font-size: 2rem !important;
+   
+  }
+
+  .logo {
+    width: 70%;
+  }
+ 
+}
+
 @media screen and (max-width: 768px) {
   .burger {
     display: block;
+    text-align: center;
+    margin-top: -10px;
   }
 
   .nav-links {
     display: none;
   }
 
-  h4 {
-    font-size: 1rem !important;
-    text-align: center;
+  .logo {
+    height: 100%;
+  }
+
+  .logo h4 {
+    font-size: 2.5rem ;
+   
   }
 
   .two p {
@@ -182,12 +263,12 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
   }
 }
-
+/*
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 70%;
   }
-}
+} */
 
 /* Intro przejscie */
 
@@ -232,28 +313,48 @@ section {
 /* Pierwsza Sekcja*/
 
 .one {
-  background: url("./imgs/Origami-to-doskonaly-sposob-na-zabicie-czasu.-Zobacz-jak-je-zrobic-krok-po-kroku_article.jpg");
-  background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.one img{
+  position: fixed;
+  z-index: -1 ;
+  top: 155px;
+left: -440px;
+width: 1994px;
+height: 1371px;
+object-fit: fill;
+opacity: 0.33;
 }
 
 .big-text {
   font-family: "Heebo", "Poppins", sans-serif, cursive;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: rgb(233, 233, 233);
-  font-size: 3rem;
+  color: #5e548e;
+  font-size: 4rem;
 }
 
 /*Druga sekcja */
 .two {
-  background-color: #f3dbc3;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.two h3{
+  text-align: center;
+  font-size: 6rem;
+  color: #2b2149;
+  margin-top: 12%;
+  font-weight: 600;
+  
 }
 
 .about {
@@ -265,11 +366,40 @@ section {
   font-size: 25px;
 }
 
+/* O Nas  */
+
+.o-nas {
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.o-nas h3{
+  text-align: center;
+  font-size: 6rem;
+  color: #2b2149;
+  
+  font-weight: 600;
+  
+}
+
+.o-nas p{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2b2149;
+  font-family: "Poppins", sans-serif;
+ 
+  
+}
+
 /* 
 Trzecia sekcja */
 
 .three {
-  background-color: #e8c39e;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +457,7 @@ Czwarta sekcja */
   justify-content: center;
   align-items: center;
   padding-top: 3vh;
-  background-color: #e8ddca;
+
 }
 
 .width {

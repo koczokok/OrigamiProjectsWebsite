@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
-
+    <link rel="stylesheet" href="https://use.typekit.net/uyi7jkn.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
@@ -22,18 +22,31 @@
                     <h4><a href="#one">Origami Projects</a></h4>
                 </div>
                 <ul class="nav-links">
-                    <li>
-                        <a href="#two">O nas</a>
-                    </li>
-
-                    <li>
-                        <a href="#three">Technalogie</a>
-                    </li>
-                    <li>
-                        <a href="#four">Kontakt</a>
-                    </li>
-
-
+                    <div>
+                        <li>
+                            <a href="#two">Usługi</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="#three">Projekty</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="#four">O nas</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="#four">FAQ</a>
+                        </li>
+                    </div>
+                    <div id="kontakt-div">
+                        <li>
+                            <a href="#four">Kontakt</a>
+                        </li>
+                    </div>
                 </ul>
                 <div class="burger" id="burger">
                     <div class="line1"></div>
@@ -69,94 +82,80 @@
     <main>
         <div class="conteiner">
             <section class="one" id="one">
+                <img id="bimg" src="./imgs/logooficjalnie.png" alt="">
                 <h4 class="big-text">Future is everything</h4>
             </section>
             <section class="two" id="two">
-                <div class="container">
-                    <div class="about row">
-                        <img src="https://unsplash.it/400" alt="" class="col-4" />
-                        <p class="col-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                            debitis facilis quibusdam magni. Eveniet.
-                        </p>
+                    <div class="container">
+                       <h3>Nasze usługi</h3>
                     </div>
-                    <div class="about row">
-                        <p class="col-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-                            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-                            omnis sapiente neque cumque consequuntur reiciendis deserunt.
-                            Dolorem vero exercitationem consequuntur, eligendi cupiditate
-                            debitis facilis quibusdam magni. Eveniet.
-                        </p>
-                        <img src="https://unsplash.it/401" alt="" class="col-4" />
+                </section>
+                <section class="two" id="two">
+                    <div class="container">
+                       <h3>Nasze Projekty</h3>
                     </div>
-                </div>
-            </section>
-            <section class="three" id="three">
-                <div class="container">
-                    <div class="row logos-1 mt-2">
-                        <img class="" src="./imgs/Angular_full_color_logo.svg.png" alt="">
-                        <img class="" src="./imgs/1200px-Java_Logo.svg.png" alt="">
-                        <img class="" src="./imgs/Python-logo-notext.svg.png" alt="">
+                </section>
+                <section class="o-nas" id="o-nas">
+                    <div class="container">
+                       <h3>O nas</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, provident. Repellendus repudiandae veritatis vel eum nisi soluta, laudantium odit magni ut nesciunt dolor enim doloremque dolorum aspernatur voluptatem ipsam aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repellat sed placeat, porro optio quisquam. Eum veniam doloremque laboriosam accusamus, deserunt, quos esse porro ipsum, reiciendis recusandae amet? Temporibus, nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, placeat illum saepe voluptates libero omnis ab dolor vel reiciendis. Ipsa odit facere earum provident distinctio sapiente. Perferendis, consectetur voluptas.</p>
                     </div>
-                    <div class="row tech">
-                        <div class="col-12">
-                            <p>
-                                Korzystamy z najlepszych technalogii, nie mam pojęcia co tu robi typescript ale ma ładne
-                                logo tak wsm trzeba będzie tu coś wymyślić ale chyba coś takiego będzie można użyć w
-                                sensie koncept technalogii
-                            </p>
+                </section>
+                <section class="two" id="two">
+                    <div class="container">
+                       <h3>FAQ</h3>
+                    </div>
+                </section>
+                <!-- <section class="three" id="three">
+                    <div class="container">
+                        <div class="row logos-1 mt-2">
+                            <img class="" src="./imgs/Angular_full_color_logo.svg.png" alt="">
+                            <img class="" src="./imgs/1200px-Java_Logo.svg.png" alt="">
+                            <img class="" src="./imgs/Python-logo-notext.svg.png" alt="">
+                        </div>
+                        <div class="row tech">
+                            <div class="col-12">
+                                <p>
+                                    Korzystamy z najlepszych technalogii, nie mam pojęcia co tu robi typescript ale ma ładne
+                                    logo tak wsm trzeba będzie tu coś wymyślić ale chyba coś takiego będzie można użyć w
+                                    sensie koncept technalogii
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="row logos-2 mb-5">
+                            <img class="col-4" src="./imgs//logo.png" alt="">
+                            <img class="col-4" src="./imgs/spring-boot-logo.png" alt="">
+                            <img class="col-4" src="./imgs/Typescript_logo_2020.svg.png" alt="">
                         </div>
 
                     </div>
+                </section> -->
+                
+<!--                    
+                        <footer>
+                            <div class="footer-content">
+                                <h1>Origami Projects</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda</p>
+                                <ul class="socials">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 
-                    <div class="row logos-2 mb-5">
-                        <img class="col-4" src="./imgs//logo.png" alt="">
-                        <img class="col-4" src="./imgs/spring-boot-logo.png" alt="">
-                        <img class="col-4" src="./imgs/Typescript_logo_2020.svg.png" alt="">
-                    </div>
-
-                </div>
-            </section>
-            <section class="four" id="four">
-                <div class="width">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="info">Jesteś zainteresowany współpracą odezwij się!</h1>
-                        </div>
-
-                    </div>
-                    <div class="row form">
-                        <form class="col-6">
-
-                            <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                            <input type="submit" value="SUBMIT" />
-                        </form>
-                    </div>
-                    <footer>
-                        <div class="footer-content">
-                            <h1>Origami Projects</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda</p>
-                            <ul class="socials">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-
-                            </ul>
-                        </div>
-                        <div class="footer-bottom">
-                            <p>copyright &copy;2022 OrigamiProjectsPolska. designed by <span>me</span></p>
-                        </div>
-                    </footer>
-                </div>
+                                </ul>
+                            </div>
+                            <div class="footer-bottom">
+                                <p>copyright &copy;2022 OrigamiProjectsPolska. designed by <span>me</span></p>
+                            </div>
+                        </footer>
+                    
 
 
-            </section>
-        </div>
+                </section> -->
+                <section class="four" id="four">
+
+                </section>
+            </div>
 
     </main>
     <script src="https://kit.fontawesome.com/2333c76d2a.js" crossorigin="anonymous"></script>
