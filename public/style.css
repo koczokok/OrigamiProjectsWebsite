@@ -136,8 +136,42 @@ body::-webkit-scrollbar {
   cursor: default;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1600px) {
+   .nav {
+    height: 108px;
+  }
+  .nav-links {
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+  .nav-links a{
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+  }
+  .nav-links div {
+    border: none;
+    
+    max-width: 119px;
+    max-height: 57px;
+    margin: 0px 5px 0px 5px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #form-row h6{
+    text-align: center !important;
+    
+  }
+  
+  .form-div{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px){
   .logo {
     width: auto;
     height: auto;
@@ -162,8 +196,10 @@ body::-webkit-scrollbar {
   .nav-links div {
     border: none;
     
-    width: 99px;
-    height: 37px;
+    max-width: 99px;
+    max-height: 37px;
+    margin: 0px 5px 0px 5px;
+
     display: flex;
     align-items: center;
     justify-content: center;
