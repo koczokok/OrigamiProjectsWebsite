@@ -97,8 +97,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-links div {
-  border: 1px solid #f0f0f0;
-  border-radius: 4px;
+ 
   width: 184px;
   height: 58px;
   display: flex;
@@ -122,7 +121,8 @@ body::-webkit-scrollbar {
 
 .nav-links a {
   color: rgb(26, 24, 24);
-
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -134,6 +134,97 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: inherit;
   cursor: default;
+}
+
+@media screen and (max-width: 1024px){
+
+  .logo {
+    width: auto;
+    height: auto;
+  }
+  
+  .logo h4 {
+
+    font-size: 24px;
+  }
+
+  .nav {
+    height: 108px;
+  }
+  .nav-links {
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+  .nav-links a{
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+  }
+  .nav-links div {
+    border: none;
+    
+    width: 99px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links a{
+    font-size: 12px;
+  };
+
+ 
+.big-text {
+  font-family: "Heebo", "Poppins", sans-serif, cursive;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #5e548e;
+  font-size: 2rem !important;
+}
+#big{
+  font-size: 2.5rem !important;
+  margin-bottom: -30px;
+}
+
+
+.main-section h3 {
+ 
+  font-size: 4rem !important;
+
+}
+
+.o-nas h3{
+  font-size: 3.5rem !important;
+}
+
+#o-nas-p{
+  font-size: 1.2rem !important;
+}
+.kontaktdiv h4{
+   font-size: 3.4rem !important;
+}
+
+.kontaktdiv p{
+  font-size: 1.2rem !important;
+}
+
+#five {
+  height: auto !important;
+  
+  margin-bottom: 200px;
+}
+
+#form-row h6{
+  text-align: center !important;
+  font-size: 2rem;
+  margin-top: 8%;
+}
+
+.form-div{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
 }
 
 
