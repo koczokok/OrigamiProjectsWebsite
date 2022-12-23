@@ -324,10 +324,10 @@ section {
 .one img{
   position: fixed;
   z-index: -1 ;
-  /* top: 155px; */
-/* left: -440px; */
-/* width: 1994px;
-height: 1371px; */
+  top: 155px; 
+ left: -440px; 
+ width: 1994px;
+height: 1371px;
 margin-top: 130px;
 width: 100%;
 height: 100%;
@@ -351,7 +351,7 @@ object-fit: fill;
   align-items: center;
 }
 
-.two h3{
+.two h3, h4{
   text-align: center;
   font-size: 6rem;
   color: #2b2149;
@@ -370,7 +370,10 @@ object-fit: fill;
 }
 
 /* O Nas  */
-
+.o-nas-fluid .row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
 .o-nas {
   
     height: auto;
@@ -389,7 +392,7 @@ object-fit: fill;
   margin-bottom: 28px;
 }
 
-.o-nas p{
+#o-nas-p{
   text-align: center;
   font-size: 2rem;
   color: #2b2149;
@@ -397,6 +400,8 @@ object-fit: fill;
  
   
 }
+
+
 
 .card {
   width: 100%;
@@ -412,8 +417,126 @@ opacity: 1;
   margin-bottom: 112px;
 }
 
-.card-inside-row div {
-  background-color: red;
+.card-inside-row img {
+  float: left;
+  width: 110px;
+  margin: 0px 15px 5px 0px;
+  height: 110px ;
+  border-radius: 5%;
+}
+
+
+
+#o-nas-bio{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify
+
+}
+
+.kontaktdiv p{
+  text-align: center;
+  font-size: 2rem;
+  color: #2b2149;
+  font-family: "Poppins", sans-serif;
+ 
+  
+}
+
+.kontaktdiv h4 {
+  text-align: center;
+  font-size: 4.5rem;
+  color: #2b2149;
+  margin-top: 12%;
+  font-weight: 600;
+}
+
+
+.form-row h6 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2b2149;
+  margin-top: 15%;
+  font-weight: 600;
+}
+
+.form-div {
+  max-width: 558px;
+  margin-top: 25px;
+  background-color: #5E548E;
+max-height: 620px;
+border: 1px solid #413768;
+border-radius: 8px;
+width: 100%;
+height: 100%;
+
+}
+
+
+
+
+.form {
+  height: 60%;
+  padding-top: 5%;
+}
+
+form {
+  min-width: 432px;
+  margin: 70px auto 0px auto;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white;
+  border: 2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid white;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+.flexa {
+  display: flex;
+  justify-content: center;
+}
+
+.send {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  align-self: center;
+  width: 60%;
+  background: #8F78B1;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: -4px auto 0px auto;
+  transition: all 0.3s;
+ 
+  font-weight: 700;
+}
+.send:hover {
+  background: white;
+  color: black;
 }
 
 /* 
@@ -493,69 +616,15 @@ Czwarta sekcja */
 
 /* Kontakt form */
 
-.form {
-  height: 60%;
-  padding-top: 5%;
-}
-
-form {
-  max-width: 420px;
-  margin: 70px auto 0px auto;
-}
-
-.feedback-input {
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: wheat;
-  border: 2px solid white;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.feedback-input:focus {
-  border: 2px solid white;
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-[type="submit"] {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: white;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: black;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
-}
-[type="submit"]:hover {
-  background: white;
-}
 
 /* FOOTER  */
 
 footer {
-  background: #111;
+  background: #8F78B1;
+  margin-top: 5%;
   height: auto;
   width: 100vw;
-  position: absolute;
+
   bottom: 0;
   left: 0;
   right: 0;
