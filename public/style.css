@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 
 h4,
@@ -23,8 +24,11 @@ h4::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
-  width: 100vw;
-  /* overflow-x: hidden; */
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  touch-action: none;
+-ms-touch-action: none;
 }
 
 .container {
@@ -46,7 +50,7 @@ body::-webkit-scrollbar {
 /* Navbar komputer */
 .nav {
   display: flex;
-  position: fixed; 
+
   width: 100%;
   padding-top: 10px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -258,9 +262,8 @@ body::-webkit-scrollbar {
     height: auto;
     width: auto;
   }
-
-  body {
-    overflow-x: hidden;
+  section{
+    width: 100%;
   }
 }
 /*
@@ -305,6 +308,7 @@ body::-webkit-scrollbar {
 
 section {
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +353,12 @@ object-fit: fill;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+}
+
+.two .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .two h3, h4{
@@ -362,11 +372,14 @@ object-fit: fill;
 
 .about {
   margin-top: 5%;
-  padding: 60px;
+  padding: 0 50px 0 50px
 }
+
 
 .about p {
   font-size: 25px;
+  padding: 25px 0 25px 0;
+  width: 100%;
 }
 
 /* O Nas  */
@@ -548,11 +561,13 @@ Trzecia sekcja */
   justify-content: center;
   align-items: center;
   padding-top: 3vh;
+  width: 100%;
 }
 
 .three img {
   width: 15%;
   height: 20%;
+  padding: 0;
   object-fit: cover;
 }
 
@@ -579,9 +594,9 @@ Trzecia sekcja */
 }
 
 .logos-2 {
-  position: absolute;
+  display: flex;
 
-  bottom: 20px;
+  top: 5%;
   justify-content: space-between;
   align-items: center;
 }
@@ -594,20 +609,19 @@ Czwarta sekcja */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.four {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 3vh;
 
 }
+
 
 .width {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.paddin-none{
+  padding: 0;
 }
 
 .info {
@@ -623,7 +637,9 @@ footer {
   background: #8F78B1;
   margin-top: 5%;
   height: auto;
+
   width: 100vw;
+
 
   bottom: 0;
   left: 0;
