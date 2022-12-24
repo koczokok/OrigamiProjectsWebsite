@@ -31,7 +31,7 @@ body {
   scrollbar-width: none;
   width: 100vw;
   scroll-margin: 300px !important ;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
@@ -178,6 +178,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     margin: 0 auto 0 auto;
   }
+
+  
 }
 
 @media screen and (max-width: 1200px){
@@ -192,7 +194,7 @@ body::-webkit-scrollbar {
   }
 
   .nav {
-    height: 108px;
+    min-height: 108px;
   }
   .nav-links {
     align-items: center;
@@ -270,6 +272,9 @@ body::-webkit-scrollbar {
   justify-content: center;
   margin: 0 auto 0 auto;
 }
+
+
+
 }
 
 
@@ -333,6 +338,8 @@ body::-webkit-scrollbar {
   color: rgb(235, 235, 235);
 }
 
+
+
 /* Media Queries*/
 
 @media screen and (max-width: 530px) {
@@ -343,6 +350,83 @@ body::-webkit-scrollbar {
   .logo {
     width: 70%;
   }
+ 
+ 
+    
+}
+
+
+@media screen and (max-width: 414px) {
+  form{
+    min-width: 75% !important;
+  }
+
+  .form-div{
+    width: 80% !important;
+    height: auto !important;
+    padding-bottom: 30px;
+  }
+
+  .kontaktdiv h4{
+    font-size: 2.4rem !important;
+ }
+
+ #kontakt-navbar{
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+ }
+
+ .mobile-nav-links {
+  position: fixed;
+  left: 100%;
+  top: 108px;
+  height: 90vh;
+  z-index: 98;
+  background-color: white;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transition: 1s;
+  justify-content: space-evenly;
+  padding: 0;
+ 
+}
+.mobile-nav-links li  a{
+  color: #413768;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mobile-nav-links.is-active {
+  left: 50%;
+
+
+}
+.bg-modal.active{
+  left: 0;
+  opacity: 0.7;
+}
+.bg-modal{
+  
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
+
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -376,6 +460,61 @@ body::-webkit-scrollbar {
   body {
     overflow-x: hidden;
   }
+  
+ #kontakt-navbar{
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+ }
+
+ .mobile-nav-links {
+  position: fixed;
+  left: 100%;
+  top: 108px;
+  height: 90vh;
+  z-index: 98;
+  background-color: white;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transition: 1s;
+  justify-content: space-evenly;
+  padding: 0;
+ 
+}
+.mobile-nav-links li  a{
+  color: #413768;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mobile-nav-links.is-active {
+  left: 50%;
+
+
+}
+.bg-modal.active{
+  left: 0;
+  opacity: 0.7;
+}
+.bg-modal{
+  
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 90;
+  transition: 1s;
+}
 }
 /*
 @media screen and (max-width: 1024px) {

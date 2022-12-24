@@ -6,7 +6,7 @@ const sectionOne = document.querySelector("#one")
 const nav = document.querySelector(".nav")
 const li = document.querySelectorAll(".mobile-nav-links li")
 const img = document.querySelector("#bimg")
-
+const modal = document.querySelector('.bg-modal')
 let height = nav.offsetHeight
 console.log(height)
 img.style.marginTop = height
@@ -21,7 +21,7 @@ btn.addEventListener('click', ()=>{
     mobile.classList.toggle('is-active')
     btn.classList.toggle('toggle')
     body.classList.toggle('burger-active')
-    
+    modal.classList.toggle('active')
    
 })
 
@@ -31,6 +31,7 @@ li.forEach((li)=>{
     mobile.classList.toggle('is-active')
     btn.classList.toggle('toggle')
     body.classList.toggle('burger-active')
+    modal.classList.toggle('active')
   })
 })
 const sectionOneOptions = {
