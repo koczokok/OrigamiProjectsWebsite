@@ -14,6 +14,12 @@ h1 {
   scrollbar-width: none;
 }
 
+.workdoor-top, .workdoor-top.hidden, .workdoor-bottom, .workdoor-bottom.hidden {
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+-webkit-backface-visibility: hidden;
+}
+
 span::-webkit-scrollbar,
 h1::-webkit-scrollbar,
 h4::-webkit-scrollbar {
@@ -24,6 +30,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
   width: 100vw;
+  scroll-margin: 300px !important ;
   /* overflow-x: hidden; */
 }
 
@@ -136,7 +143,9 @@ body::-webkit-scrollbar {
   cursor: default;
 }
 
-@media screen and (max-width: 1600px) {
+
+
+@media screen and (max-width: 1680px) {
    .nav {
     height: 108px;
   }
@@ -299,7 +308,7 @@ body::-webkit-scrollbar {
 .mobile-nav-links {
   position: fixed;
   left: 100%;
-  top: 116px;
+  top: 107px;
   height: 92vh;
   z-index: 98;
   background-color: #2b2149;
@@ -336,7 +345,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .burger {
     display: block;
     text-align: center;
