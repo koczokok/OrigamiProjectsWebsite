@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
   font-family: industry-inc-base, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 45px;
+  font-size: 38px;
   display: flex;
   align-self: center;
 }
@@ -133,7 +133,7 @@ body::-webkit-scrollbar {
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -214,6 +214,7 @@ body::-webkit-scrollbar {
 
   .nav-links a {
     font-size: 12px;
+   
   }
 
   .big-text {
@@ -222,10 +223,11 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     color: #5e548e;
     font-size: 2rem !important;
+    
   }
   #big {
     font-size: 2.5rem !important;
-    margin-bottom: -30px;
+    margin-bottom: -15px;
   }
 
   .main-section h3 {
@@ -629,7 +631,7 @@ section {
 .main-section h3,
 h4 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 4.5rem;
   color: #2b2149;
   margin-top: 12%;
   font-weight: 600;
@@ -659,7 +661,7 @@ h4 {
 
 .o-nas h3 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 4.5rem;
   color: #2b2149;
 
   font-weight: bold;
@@ -668,15 +670,16 @@ h4 {
 
 #o-nas-p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #2b2149;
+  margin: 0px 50px 0px 50px;
   font-family: "Poppins", sans-serif;
 }
 
 .card {
   width: 100%;
   height: 50%;
-  min-height: 324px;
+
   border: 6px solid #5e548e !important;
   border-radius: 50px !important;
   opacity: 1;
@@ -696,7 +699,7 @@ h4 {
 }
 
 #o-nas-bio {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-align: justify;
 }
@@ -707,14 +710,14 @@ h4 {
 }
 .kontaktdiv p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #2b2149;
   font-family: "Poppins", sans-serif;
 }
 
 .kontaktdiv h4 {
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: #2b2149;
   margin-top: 12%;
   font-weight: 600;
@@ -729,14 +732,14 @@ h4 {
 }
 
 .form-div {
-  max-width: 558px;
+  max-width: 475px;
   margin-top: 25px;
   background-color: #5e548e;
   max-height: 620px;
   border: 1px solid #413768;
   border-radius: 8px;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .form {
@@ -745,9 +748,12 @@ h4 {
 }
 
 form {
-  min-width: 432px;
-  margin: 70px auto 0px auto;
+  min-width: 375px;
+  margin-top: 35px;
+  margin-bottom: -15px;
 }
+
+
 
 .feedback-input {
   color: black;
@@ -760,7 +766,8 @@ form {
   border: 2px solid white;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+
+  margin: 0px auto 15px auto;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
@@ -790,7 +797,7 @@ textarea {
   border: 0;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: -4px auto 0px auto;
