@@ -20,39 +20,39 @@
     <header>
         <div>
             <nav class="nav">
-                <div class="logo">
-                    <h4><a href="#one">Origami Projects</a></h4>
-                </div>
+                <p class="logo">
+                    <a href="#main">Origami Projects</a>
+                </p>
                 <ul class="nav-links">
-                    <a href="#two">
+                    <a href="#services">
                         <div>
                             <li>
                                 Usługi
                             </li>
                         </div>
                     </a>
-                    <a href="#three">
+                    <a href="#projects">
                         <div>
                             <li>
                                 Projekty
                             </li>
                         </div>
                     </a>
-                    <a href="#o-nas">
+                    <a href="#about">
                         <div>
                             <li>
                                 O nas
                             </li>
                         </div>
                     </a>
-                    <a href="#four">
+                    <a href="#techno">
                         <div>
                             <li>
                                 Technologie
                             </li>
                         </div>
                     </a>
-                    <a href="#five" id="kontakt-navbar">
+                    <a href="#contact" id="kontakt-navbar">
                         <div>
                             <li>
                                 Kontakt
@@ -84,37 +84,37 @@
     </div>
     <nav class="mobile-nav">
         <ul class="mobile-nav-links">
-            <li><a href="#one">Home</a></li>
-            <li><a href="#two">O nas</a></li>
-
-            <li><a href="#three">Technologie</a></li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#techno">Technologie</a></li>
             <div class="kontakt-nabvbar">
-                <li> <a href="#four" id="kontakt-navbar">Kontakt</a></li>
+                <li> <a href="#contact" id="kontakt-navbar">Kontakt</a></li>
             </div>
-
         </ul>
     </nav>
     <div class="bg-modal"> </div>
     <main>
         <div class="conteiner">
-            <section class="main-section-one" id="one">
-                <img id="bimg" src="./imgs/logooficjalnie.png" alt="">
+            <section class="main-section" id="main">
+                <img id="bird" src="./imgs/logooficjalnie.png" alt="Page Background">
                 <h4 class="big-text" id="big">Future is everything</h4>
             </section>
-            <section class="main-section" id="two">
+            <section class="services-section" id="services">
                 <div class="container">
                     <h3>Nasze usługi</h3>
                 </div>
             </section>
-            <section class="main-section" id="three">
+            <section class="projects-section" id="projects">
                 <div class="container">
                     <h3>Nasze Projekty</h3>
                 </div>
             </section>
-            <section class="o-nas" id="o-nas">
+            <section class="about-section" id="about-section">
                 <div class="container">
                     <h3>Cześć, cześć!</h3>
-                    <p id="o-nas-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, provident.
+                    <p class="about-main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, provident.
                         Repellendus repudiandae veritatis vel eum nisi soluta, laudantium odit magni ut nesciunt dolor
                         enim doloremque dolorum aspernatur voluptatem ipsam aliquid? Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. Commodi repellat sed placeat, porro optio quisquam. Eum veniam
@@ -124,11 +124,11 @@
                         distinctio sapiente. Perferendis, consectetur voluptas.</p>
                     <h3>Poznaj nas bliżej</h3>
                 </div>
-                <div class="container-fluid o-nas-fluid">
-                    <div class="row justify-content-center gx-5 gx-md-3 gx-xxl-5">
-                        <div class="col-12 col-md-5 col-xxl-5">
-                            <div class="card">
-                                <div class="container card-inside">
+                <div class="container-fluid about-section-fluid">
+                    <div class="row justify-content-center gx-5 gx-md-3 gx-xxl-5 mx-5">
+                        <div class="col-12 col-md-5 col-xxl-5 about-card-column-left">
+                            <div class="about-card">
+                                <div class="container">
                                     <div class="row card-inside-row">
                                         <div class="col-12 mt-4">
                                             <h4>Michał Marzęcki</h4>
@@ -137,19 +137,18 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/400" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12  mt-5 mt-md-0 col-md-5 col-xxl-5">
-                            <div class="card">
-                                <div class="container card-inside">
+                        <div class="col-12  mt-5 mt-md-0 col-md-5 col-xxl-5 about-card-column-right">
+                            <div class="about-card">
+                                <div class="container">
                                     <div class="row card-inside-row">
                                         <div class="col-12 mt-4">
                                             <h4>Paweł Kuryłowicz</h4>
@@ -158,21 +157,20 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/407" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center no-gutter  gx-md-3 gx-xxl-5 gx-5 mt-5">
-                        <div class="col-12 col-md-5 col-xxl-5">
-                            <div class="card ">
-                                <div class="container card-inside">
+                    <div class="row justify-content-center no-gutter  gx-md-3 gx-xxl-5 gx-5 mt-5 mx-5">
+                        <div class="col-12 col-md-5 col-xxl-5 about-card-column-left">
+                            <div class="about-card ">
+                                <div class="container">
                                     <div class="row card-inside-row">
                                         <div class="col-12 mt-4">
                                             <h4>Natalia Radzka</h4>
@@ -181,19 +179,18 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/406" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-5 mt-md-0 col-md-5 col-xxl-5">
-                            <div class="card">
-                                <div class="container card-inside">
+                        <div class="col-12 mt-5 mt-md-0 col-md-5 col-xxl-5 about-card-column-right">
+                            <div class="about-card">
+                                <div class="container">
                                     <div class="row card-inside-row">
                                         <div class="col-12 mt-4">
                                             <h4>Stanisław Siatkowski</h4>
@@ -202,11 +199,10 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/405" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit..</p>
                                         </div>
                                     </div>
                                 </div>
@@ -214,9 +210,9 @@
                         </div>
 
                     </div>
-                    <div class="row justify-content-center no-gutter  gx-md-3 gx-xxl-5 gx-5 mt-5">
-                        <div class="col-12 col-md-5 col-xxl-5">
-                            <div class="card ">
+                    <div class="row justify-content-center no-gutter  gx-md-3 gx-xxl-5 gx-5 mt-5 mx-5">
+                        <div class="col-12 col-md-5 col-xxl-5 about-card-column-left">
+                            <div class="about-card ">
                                 <div class="container card-inside">
                                     <div class="row card-inside-row">
                                         <div class="col-0 mt-4">
@@ -226,18 +222,17 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/401" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-5 mt-md-0 col-md-5 col-xxl-5">
-                            <div class="card">
+                        <div class="col-12 mt-5 mt-md-0 col-md-5 col-xxl-5 about-card-column-right">
+                            <div class="about-card">
                                 <div class="container card-inside">
                                     <div class="row card-inside-row">
                                         <div class="col-12 mt-4">
@@ -247,11 +242,10 @@
                                     <div class="row card-inside-row">
                                         <div class="col-12 mb-4">
                                             <img src="https://unsplash.it/403" alt="">
-                                            <p id="o-nas-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p id="person-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Nullam ut nulla congue, rutrum massa sed, im adipiscing elit. Integer
                                                 dui libero, feugiat eu posuere id, auctor ac elit. consectetur
-                                                adipiscing elit. Nullam ut nulla congue, rutrum massa sed, im adipiscing
-                                                elit. Integer dui libero, feugi consectetur adipiscing elit.</p>
+                                                adipiscing elit.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -260,16 +254,16 @@
                     </div>
                 </div>
             </section>
-            <section class="main-section" id="four">
+            <section class="techno-section" id="techno">
                 <div class="container">
-                    <h3>FAQ</h3>
+                    <h3>Technologie</h3>
                 </div>
             </section>
 
-            <section class="main-section-five" id="five">
+            <section class="contact-section" id="contact">
                 <div class="container-fluid">
                     <div class="row justify-content-around  ">
-                        <div class="col-md-12 col-xl-6 ml-1 kontaktdiv">
+                        <div class="col-md-12 col-xl-6 ml-1 kontaktformdiv">
                             <h4>Porozmawiajmy!</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sequi ex fugiat vel eos
                                 consectetur quasi? In nobis aspernatur excepturi repellendus numquam ullam cupiditate
@@ -285,7 +279,7 @@
                                     <input name="email" type="text" class="feedback-input" placeholder="Adres e-mail" />
                                     <input name="phoneNumber" type="text" class="feedback-input"
                                         placeholder="Numer telefonu" />
-                                    <textarea name="text" class="feedback-input" placeholder="Wiadomość"></textarea>
+                                    <textarea name="text" class="feedback-input text-area" placeholder="Wiadomość"></textarea>
                                     <div class="flexa">
                                         <button class="send">Wyślij</button>
                                     </div>
