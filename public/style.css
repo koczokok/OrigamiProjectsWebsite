@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
 .logo {
   color: #2b2149;
   text-transform: uppercase;
-  margin: 0px !important;
+  margin: 0px;
   font-family: industry-inc-base, sans-serif;
   font-size: 38px;
   height: 45px;
@@ -130,86 +130,11 @@ body::-webkit-scrollbar {
   cursor: default;
 }
 
-@media screen and (max-width: 1200px) {
-  .logo {
-    width: auto;
-    height: auto;
-  }
-
-  .logo h4 {
-    font-size: 24px;
-  }
-
-  .nav {
-    min-height: 108px;
-  }
-  .nav-links {
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
-  .nav-links a {
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
-  }
-  .nav-links div {
-    border: none;
-
-    max-width: 99px;
-    max-height: 37px;
-    margin: 0px 5px 0px 5px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-links a {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .logo {
-    margin-left: 2rem;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .logo {
-    height: 100%;
-  }
-
-  .logo h4 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .logo {
-    margin-left: 1.5rem !important;
-    width: 20% !important;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .logo h4 {
-    font-size: 2rem !important;
-  }
-
-  .logo {
-    width: 70%;
-  }
-}
 @media screen and (max-width: 1680px) {
   .nav {
     height: 108px;
   }
-  .nav-links {
-    align-items: center;
-    margin: 0 0 10px 0;
-  }
+
   .nav-links a {
     border: 1px solid #f0f0f0;
     border-radius: 4px;
@@ -226,22 +151,24 @@ body::-webkit-scrollbar {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .logo {
     width: auto;
-    height: auto;
+    height: 45px;
+    font-size: 30px;
+    margin-top: 10px;
+   
   }
 
-  .logo h4 {
-    font-size: 24px;
-  }
 
   .nav {
     min-height: 108px;
+   
   }
   .nav-links {
     align-items: center;
-    margin: 0 0 10px 0;
+    margin: 0px !important;
   }
   .nav-links a {
     border: 1px solid #f0f0f0;
@@ -250,8 +177,8 @@ body::-webkit-scrollbar {
   .nav-links div {
     border: none;
 
-    max-width: 99px;
-    max-height: 37px;
+    max-width: 99px !important;
+    max-height: 47px !important;
     margin: 0px 5px 0px 5px;
 
     display: flex;
@@ -264,22 +191,70 @@ body::-webkit-scrollbar {
   }
 }
 
-/* Burger */
+@media screen and (max-width: 1000px) {
+  .logo {
+   margin-left: 4rem;
+  
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .logo h4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-left: 2rem ;
+    height: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-left:  1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+  .logo h4 {
+    font-size: 2rem !important;
+  }
+
+  .logo {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .logo {
+    margin-left:  1.25rem;
+  }
+}
+
 
 @media screen and (max-width: 414px) {
-  .burger {
-    margin-right: 1rem !important;
+  .logo {
+    margin-left: 1rem ;
+    width: 20% !important;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .burger {
-    display: block !important;
-    text-align: center;
-    margin-top: -10px;
-    margin-right: 2rem;
-  }
-}
+
+
+
+/* Burger */
+
+
 .burger {
   display: none;
 }
@@ -307,6 +282,42 @@ body::-webkit-scrollbar {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -9px);
 }
+
+@media screen and (max-width: 1000px) {
+  .burger {
+    display: block !important;
+    text-align: center;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .burger {
+    margin-right: 2rem ;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .burger{
+    margin-right: 1.5rem ;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .burger {
+    margin-right: 1.25rem ;
+  }
+}
+
+
+@media screen and (max-width: 414px) {
+  .burger {
+    margin-right: 1rem ;
+  }
+}
+
+
+
 
 /* Navbar mobile */
 
