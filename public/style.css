@@ -212,8 +212,9 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 800px) {
   .logo {
-    margin-left: 2rem ;
-    height: 40px;
+  
+    margin: 0px 0px 0px 2rem;
+    height: 34px;
   }
 }
 
@@ -222,14 +223,13 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 600px) {
   .logo {
     margin-left:  1.5rem;
+    height: 33px;
   }
 }
 
 
 @media screen and (max-width: 530px) {
-  .logo h4 {
-    font-size: 2rem !important;
-  }
+
 
   .logo {
     width: 70%;
@@ -238,6 +238,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 460px) {
   .logo {
     margin-left:  1.25rem;
+    height: 34px;
   }
 }
 
@@ -245,8 +246,12 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 414px) {
   .logo {
     margin-left: 1rem ;
-    width: 20% !important;
+    margin: 10px 0px 0px 1rem;
+    width: 40% !important;
+    height: auto;
   }
+
+ 
 }
 
 
