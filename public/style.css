@@ -245,8 +245,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 414px) {
   .logo {
-    margin-left: 1rem ;
-    margin: 10px 0px 0px 1rem;
+   
+    margin: 10px 0px 0px 1.2rem;
     width: 40% !important;
     height: auto;
   }
@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 414px) {
   .burger {
-    margin-right: 1rem ;
+    margin-right: 1.2rem ;
   }
 }
 
