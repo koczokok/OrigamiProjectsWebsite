@@ -484,15 +484,18 @@ section {
   text-transform: uppercase;
   color: #5e548e;
   font-size: 4rem;
+  margin: 0px auto 0px auto;
 }
 
 @media screen and (max-width: 1200px) {
   .big-text {
-    font-family: "muli" !important;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #5e548e;
     font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .big-text {
+    font-size: 1.4rem !important;
   }
 }
 /*Usługi i projekty sekcje */
@@ -507,25 +510,41 @@ section {
 
 .projects-section h3,
 .services-section h3,
-.techno-section h3 {
+.techno-section h3,
+.kontaktformdiv h3 {
   text-align: center;
   font-size: 4.5rem;
   color: #2b2149;
   margin-top: 12%;
 }
 
+
 @media screen and (max-width: 1200px) {
   .projects-section h3,
   .services-section h3,
-  .techno-section h3 {
-    font-size: 4.5rem !important;
+  .techno-section h3,
+  .about-section h3,
+  .kontaktformdiv h3 {
+    font-size: 4.5rem;
   }
 }
 @media screen and (max-width: 530px) {
   .projects-section h3,
   .services-section h3,
-  .techno-section h3 {
-    font-size: 2.5rem !important;
+  .techno-section h3,
+  .about-section h3,
+  .kontaktformdiv h3 {
+    font-size: 2.5rem ;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projects-section h3,
+  .services-section h3,
+  .techno-section h3,
+  .about-section h3,
+  .kontaktformdiv h3 {
+    font-size: 2rem ;
   }
 }
 
@@ -629,9 +648,9 @@ section {
     padding-bottom: 30px;
   }
 
-  .kontaktformdiv h4 {
+  /* .kontaktformdiv h4 {
     font-size: 2.4rem !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -639,9 +658,9 @@ section {
     height: auto !important;
     margin-bottom: 200px;
   }
-  .kontaktformdiv h4 {
+  /* .kontaktformdiv h4 {
     font-size: 3.4rem !important;
-  }
+  } */
   .kontaktformdiv p {
     font-size: 1.2rem !important;
   }
@@ -697,13 +716,6 @@ section {
   padding: 0px 25px 0px 50px !important;
 }
 
-.kontaktformdiv h4 {
-  text-align: center;
-  font-size: 3.5rem;
-  color: #2b2149;
-  margin-top: 12%;
-  font-weight: 600;
-}
 
 .form-row h6 {
   text-align: center;
