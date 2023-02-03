@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 1.4rem;
   color: #2b2149;
-  font-family: "Poppins", sans-serif;
+  padding: 0px 35px 0px 35px;
 }
 
 .kontaktformdiv {
@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 2.5rem;
   color: #2b2149;
-  margin-top: 15%;
+  margin-top: 12%;
   font-weight: 600;
 }
 
@@ -33,7 +33,7 @@
   border: 1px solid #413768;
   border-radius: 8px;
   width: 100%;
-  height: 75%;
+  height: auto;
 }
 
 .form {
@@ -42,8 +42,9 @@
 }
 
 form {
-  min-width: 432px;
-  margin: 35px auto 0px auto;
+  /* min-width: 432px; */
+  width: 100%;
+  margin: 35px auto 35px auto;
 }
 
 .feedback-input {
@@ -118,6 +119,7 @@ textarea {
   } */
   .kontaktformdiv p {
     font-size: 1.2rem;
+  
   }
   #form-row h6 {
     text-align: center;
@@ -126,8 +128,20 @@ textarea {
   }
 
   .form-div {
-    height: 85%;
+    /* height: 85%; */
+    width: 70%;
+    padding-bottom: 35px;
   }
+
+  form{
+    min-width: 70% !important;
+  }
+
+   
+.form-row h6{
+    margin-bottom: 25px;
+  }
+
 }
 
  
@@ -135,17 +149,27 @@ textarea {
   .kontaktformdiv {
     padding: 0;
   }
+
+  .form-div {
+    width: 55%;
+    height: auto;
+    
+  }
+  .form-in {
+    min-width: 80%;
+  }
 }
+
 
 @media screen and (max-width: 500px) {
   .form-div {
     width: 80%;
     height: auto;
-    padding-bottom: 35px;
+    
   }
 
   form {
-    width: 75%;
+    
     min-width: 75%;
   }
 }
@@ -155,10 +179,7 @@ textarea {
     min-width: 80%;
   }
 
- 
-.form-row h6{
-    margin-bottom: 25px;
-  }
+
 
   .form-div {
     width: 95% ;
