@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 h4,
@@ -238,6 +239,7 @@ body::-webkit-scrollbar {
     margin: 10px 0px 0px 1.2rem;
     width: 40% !important;
     height: auto;
+    line-height: 90%;
   }
 }
 
@@ -641,7 +643,7 @@ footer {
   background: rgba(143, 120, 177);
 
   height: auto;
-  width: 100vw;
+  
 
   position: absolute;
   font-family: "Poppins", sans-serif;
