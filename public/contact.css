@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 1.4rem;
   color: #2b2149;
-  padding: 0px 35px 0px 35px;
+  padding: 0px 14% 0px 14%;
 }
 
 .kontaktformdiv {
@@ -44,7 +44,8 @@
 form {
   /* min-width: 432px; */
   width: 100%;
-  margin: 35px auto 35px auto;
+  margin: 45px auto 45px auto;
+  padding: 0px 10px 0px 10px;
 }
 
 .feedback-input {
@@ -58,7 +59,7 @@ form {
   border: 2px solid white;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;

@@ -644,11 +644,16 @@ footer {
 
   height: auto;
   
-
+  width: 100%;
   position: absolute;
   font-family: "Poppins", sans-serif;
   padding-top: 20px;
   color: #fff;
+}
+@media screen and (min-width: 414x) {
+  footer {
+    margin-top: 100px;
+  }
 }
 
 .footer-content {
