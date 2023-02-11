@@ -37,7 +37,8 @@ body {
   scroll-margin: 300px !important ;
   overflow-x: hidden;
   padding-bottom: 228px !important;
-  font-family: "Muli" !important;
+  font-family: "catamaran" !important;
+  
 }
 
 .container {
@@ -117,7 +118,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-links a {
-  font-family: "muli", "Times New Roman";
+
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -418,8 +419,7 @@ section {
 #bird {
   position: fixed;
   z-index: -1;
-  top: 155px;
-  left: -440px;
+ 
   width: 100%;
   height: 100vh;
   margin-top: 130px;
@@ -427,6 +427,25 @@ section {
   object-fit: fill;
 }
 
+@media screen and (max-width: 1600px) {
+  #bird{
+    content: url("./imgs/1600.png");
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  #bird{
+    content: url("./imgs/1400.png");
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  #bird{
+    content: url("./imgs/1200.png");
+  }
+}
 /* main {
   background-image: url("./imgs/logooficjalnie.png");
   color: white;
@@ -646,7 +665,7 @@ footer {
   
   width: 100%;
   position: absolute;
-  font-family: "Poppins", sans-serif;
+ 
   padding-top: 20px;
   color: #fff;
 }
