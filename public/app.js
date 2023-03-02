@@ -12,6 +12,8 @@ console.log(height)
 img.style.marginTop = height
 
 
+
+
 window.addEventListener('resize', function(event){
   let height = nav.offsetHeight
   img.style.marginTop = height
@@ -61,7 +63,7 @@ const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
 tl.to(".text", {y:'0%', duration: 1.5, stagger: 0.25})
 tl.to(".intro", {y:'-100%', duration: 1, delay: 0.5})
 tl.to(".intro", {display:'none'})
-tl.fromTo("#bird", {opacity: 0}, {opacity: 0.5, duration: 0.75})
+tl.fromTo("#bird", {opacity: 0}, {opacity: 0.38, duration: 0.75})
 tl.fromTo(".nav", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5")
 tl.fromTo(".big-text", {opacity: 0}, {opacity: 1, duration: 0.5}, "-=0.5")
 

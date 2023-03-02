@@ -420,18 +420,39 @@ section {
   position: fixed;
   z-index: -1;
  
-  width: 100%;
-  height: 100vh;
+ left: 0;
   margin-top: 130px;
   background-size: cover;
   object-fit: fill;
 }
 
+
 @media screen and (max-width: 1600px) {
   #bird{
-    content: url("./imgs/1600.png");
+    content: url("./imgs/ipasdproo.png");
   }
 }
+@media screen and (max-width: 1200px) {
+  #bird{
+    content: url("./imgs/powietrze.png");
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #bird{
+    content: url("./imgs/mini.png");
+  }
+}
+@media screen and (max-width: 484px) {
+  #bird{
+    content: url("./imgs/telefon.png");
+  }
+}
+
+
+
+
+/* 
 
 
 @media screen and (max-width: 1400px) {
@@ -445,7 +466,7 @@ section {
   #bird{
     content: url("./imgs/1200.png");
   }
-}
+} */
 /* main {
   background-image: url("./imgs/logooficjalnie.png");
   color: white;
@@ -657,6 +678,9 @@ section {
 
 
 /* FOOTER  */
+.red{
+  background: red;
+}
 
 footer {
   background: rgba(143, 120, 177);
