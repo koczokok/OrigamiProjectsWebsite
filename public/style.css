@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 h4,
@@ -38,7 +37,6 @@ body {
   overflow-x: hidden;
   padding-bottom: 228px !important;
   font-family: "catamaran" !important;
-  
 }
 
 .container {
@@ -118,7 +116,6 @@ body::-webkit-scrollbar {
 }
 
 .nav-links a {
-
   border: 1px solid #f0f0f0;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -404,11 +401,16 @@ body::-webkit-scrollbar {
 /* Main */
 
 section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 125px;
 }
 
 /* Pierwsza Sekcja*/
@@ -420,38 +422,34 @@ flex-direction: column;
 #bird {
   position: fixed;
   z-index: -1;
- 
- left: 0;
+
+  left: 0;
   margin-top: 130px;
   background-size: cover;
   object-fit: fill;
 }
 
-
 @media screen and (max-width: 1600px) {
-  #bird{
+  #bird {
     content: url("./imgs/ipasdproo.png");
   }
 }
 @media screen and (max-width: 1200px) {
-  #bird{
+  #bird {
     content: url("./imgs/powietrze.png");
   }
 }
 
 @media screen and (max-width: 700px) {
-  #bird{
+  #bird {
     content: url("./imgs/mini.png");
   }
 }
 @media screen and (max-width: 484px) {
-  #bird{
+  #bird {
     content: url("./imgs/telefon.png");
   }
 }
-
-
-
 
 /* 
 
@@ -531,11 +529,14 @@ flex-direction: column;
 .services-section,
 .projects-section,
 .techno-section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.main-section {
+  height: 100vh;
 }
 
 .projects-section h3,
@@ -564,7 +565,7 @@ flex-direction: column;
   .techno-section h3,
   .about-section h3,
   .kontaktformdiv h3 {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
 }
 
@@ -574,7 +575,7 @@ flex-direction: column;
   .techno-section h3,
   .about-section h3,
   .kontaktformdiv h3 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
 }
 
@@ -599,10 +600,6 @@ flex-direction: column;
 }
 
 /* O Nas  */
-
-.about-section {
-  display: inline;
-}
 
 .about-main-p {
   text-align: center;
@@ -635,6 +632,11 @@ flex-direction: column;
   border-radius: 50px !important;
   opacity: 1;
   padding: 10px;
+  height: 100%;
+}
+
+.dev-camp {
+  text-align: center;
 }
 
 .about-card-column-left {
@@ -677,10 +679,8 @@ flex-direction: column;
   text-align: justify;
 }
 
-
-
 /* FOOTER  */
-.red{
+.red {
   background: red;
 }
 
@@ -688,10 +688,10 @@ footer {
   background: rgba(143, 120, 177);
 
   height: auto;
-  
+
   width: 100%;
   position: absolute;
- 
+
   padding-top: 20px;
   color: #fff;
 }
