@@ -408,6 +408,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+flex-direction: column;
 }
 
 /* Pierwsza Sekcja*/
@@ -534,6 +535,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .projects-section h3,
