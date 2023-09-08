@@ -452,49 +452,6 @@ section {
   }
 }
 
-/* 
-
-
-@media screen and (max-width: 1400px) {
-  #bird{
-    content: url("./imgs/1400.png");
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  #bird{
-    content: url("./imgs/1200.png");
-  }
-} */
-/* main {
-  background-image: url("./imgs/logooficjalnie.png");
-  color: white;
-  background-repeat: no-repeat;
- background-size: cover ;
-  background-attachment: fixed;
-  background-position: 5% 100%;
-} */
-/* 
-@media screen and (max-width: 1200px){
-  main{
-    background-image: url("./imgs/logooficjalnie1200px.png");
-  }
-}
-
-@media screen and (max-width: 680px){
-  main{
-    background-image: url("./imgs/logojuz34.png") !important;
-  }
-}
-
-
-@media screen and (max-width: 800px){
-  main{
-    background-image: url("./imgs/logo800.png");
-  }
-} */
-
 .big-text {
   font-family: "muli";
   letter-spacing: 5px;
@@ -667,9 +624,9 @@ section {
 
 .card-inside-row img {
   float: left;
-  width: 110px;
+
   margin: 0px 15px 5px 0px;
-  height: 110px;
+
   border-radius: 5%;
 }
 
@@ -695,11 +652,11 @@ footer {
   padding-top: 20px;
   color: #fff;
 }
-@media screen and (min-width: 414x) {
+/* @media screen and (min-width: 414x) {
   footer {
     margin-top: 100px;
   }
-}
+} */
 
 .footer-content {
   display: flex;
@@ -760,7 +717,58 @@ footer {
 }
 
 .profile-img {
-  width: 160px !important;
-  height: 229px !important;
+  width: 160px;
+  height: 229px;
   float: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  column-gap: 60px;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-card-left {
+  justify-self: end;
+  height: 100%;
+}
+
+.about-card-right {
+  justify-self: start;
+  height: 100%;
+  min-height: 315px;
+}
+
+.surname h4 {
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1700px) {
+  .about-card-left,
+  .about-card-right {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-left,
+  .about-card-right {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profile-img {
+    width: 120px;
+    height: 172px;
+  }
 }
