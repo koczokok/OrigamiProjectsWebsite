@@ -1,0 +1,96 @@
+@media screen and (max-width: 1680px) {
+  #form-row h6 {
+    text-align: center;
+  }
+
+  .form-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* .kontaktformdiv h4 {
+    font-size: 3.4rem !important;
+  } */
+  .kontaktformdiv p {
+    font-size: 1.2rem;
+  }
+  #form-row h6 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8%;
+  }
+
+  .form-div {
+    /* height: 85%; */
+    width: 70%;
+    /* padding-bottom: 35px; */
+  }
+
+  form {
+    min-width: 70% !important;
+  }
+
+  .form-row h6 {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .kontaktformdiv {
+    padding: 0;
+  }
+
+  .form-div {
+    width: 55%;
+    height: auto;
+  }
+  .form-in {
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-div {
+    width: 80%;
+    height: auto;
+  }
+
+  form {
+    min-width: 75%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  form {
+    min-width: 80%;
+  }
+
+  .form-div {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #bird {
+    content: url("./imgs/background/ipasdproo.png");
+  }
+}
+@media screen and (max-width: 1200px) {
+  #bird {
+    content: url("./imgs/background/powietrze.png");
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #bird {
+    content: url("./imgs/background/mini.png");
+  }
+}
+@media screen and (max-width: 484px) {
+  #bird {
+    content: url("./imgs/background/telefon.png");
+  }
+}

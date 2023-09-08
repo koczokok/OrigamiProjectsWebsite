@@ -6,7 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="theme-color" content="#fff">
+  <meta name="description"
+    content="Strona OrigamiProjects, organizacji założonej przez grupę przyjaciół zajmująca się tworzeniem projektów IT">
   <title>Origami Projects Polska</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="./imgs/favicon/flaction logo.ico" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
@@ -41,7 +45,7 @@
           <a href="#ourHistory">
             <div>
               <li>
-                Nasz historia
+                Nasza historia
               </li>
             </div>
           </a>
@@ -88,7 +92,9 @@
     <ul class="mobile-nav-links">
       <li><a href="#main">Home</a></li>
       <li><a href="#services">Usługi</a></li>
-      <li><a href="#about">Nasz team</a></li>
+      <li><a href="#about-section">Nasz team</a></li>
+      <li><a href="#ourHistory">Nasza historia</a></li>
+      <li><a href="#devCamp">Origami Dev Campus</a></li>
       <div class="kontakt-nabvbar">
         <li> <a href="#contact" id="kontakt-navbar">Kontakt</a></li>
       </div>
@@ -98,7 +104,7 @@
   <main>
     <div class="conteiner main-div">
       <section class="main-section" id="main">
-        <img id="bird" src="./imgs/przegladarka.png" alt="Page Background">
+        <img id="bird" src="./imgs/background/przegladarka.png" alt="Zdjęcie w tle">
         <h4 class="big-text" id="big">Hope in technology</h4>
       </section>
       <section class="services-section" id="services">
@@ -132,13 +138,14 @@
               <div class="about-card">
                 <div class="container">
                   <div class="row card-inside-row">
-                    <div class="col-12 mt-4">
+                    <div class="col-12 mt-3">
                       <h4>Michał Marzęcki</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/400" alt="">
+                      <img src="./imgs/profilePictures/Michal.jpg" class="profile-img"
+                        alt="Zdjęcie Michała Marzęckiego">
                       <p id="person-bio">Team Lead, Senior Backend Developer. Wieloletnie doświadczenie z tworzeniem
                         warstwy biznesowej przy pomocy REST API tworzonego w Javie. Znajomość najlepszych praktyk,
                         wzorców projektowych oraz wysokie zrozumienie, co rzadko spotykane wśród programistów, ludzi.
@@ -153,13 +160,13 @@
               <div class="about-card">
                 <div class="container">
                   <div class="row card-inside-row">
-                    <div class="col-12 mt-4">
+                    <div class="col-12 mt-3">
                       <h4>Paweł Kuryłowicz</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/407" alt="">
+                      <img src="./imgs/profilePictures/Pawel.jpg" class="profile-img" alt="Zdjęcie Pawła Kuryłowicza">
                       <p id="person-bio">Senior Frontend/Fullstack developer. Długa lista znanych technologii do
                         tworzenia warstwy klienckiej. Można wręcz rzecz, że w Origami Projects odpowiada za większość
                         rozwiązań w warstwie prezentacji. Pracujący po nocach z wysoką dyscypliną i chęcią dowiezienia
@@ -176,13 +183,13 @@
               <div class="about-card ">
                 <div class="container">
                   <div class="row card-inside-row">
-                    <div class="col-12 mt-4">
+                    <div class="col-12 mt-3">
                       <h4>Natalia Radzka</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/406" alt="">
+                      <img src="./imgs/profilePictures/Natalia.jpg" class="profile-img" alt="Zdjęcie Natalii Radzkiej">
                       <p id="person-bio">Senior Graphic/UX Designer. Nasza dusza artystyczna, która odpowiada za design
                         graficzny każdej strony jaką zrobiliśmy, łącznie z tą. Razem z Pawłem tworzą niepowtarzalny
                         duet, który sprosta każdemu oczekiwaniu klienta. Dzięki Natalii każda strona jest dopasowana do
@@ -196,13 +203,14 @@
               <div class="about-card">
                 <div class="container">
                   <div class="row card-inside-row">
-                    <div class="col-12 mt-4">
+                    <div class="col-12 mt-3">
                       <h4>Stanisław Siatkowski</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/405" alt="">
+                      <img src="./imgs/profilePictures/Stanislaw.jpg" class="profile-img"
+                        alt="Zdjęcie Stanisława Siatkowskiego">
                       <p id="person-bio">Junior Frontend Developer/Data Analyst. Stanisław to nasza wschodząca gwiazda w
                         dziedzinie tworzenia interfejsów użytkownika, analizy danych i wykorzystwane prostych modeli AI.
                         Jego precyzja, pasja do uczenia się i studia sprawiają, że jest niezastąpionym członkiem
@@ -215,17 +223,17 @@
           </div>
           <div class="row justify-content-center no-gutter  gx-md-4 gx-xxl-5 gx-3 mt-4 mx-md-2">
 
-            <div class="col-12 mt-4 mt-md-0 col-md-5 col-xxl-5 about-card-column-right">
+            <div class="col-12 col-md-5 col-xxl-5 about-card-column-left">
               <div class="about-card">
                 <div class="container card-inside">
                   <div class="row card-inside-row">
-                    <div class="col-12 mt-4">
+                    <div class="col-12 mt-3">
                       <h4>Jakub Jaworski</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/403" alt="">
+                      <img src="./imgs/profilePictures/KubaJ.jpg" class="profile-img" alt="Zdjęcie Kuby Jaworskiego">
                       <p id="person-bio">Mid Backend Developer. Samouk, który wytrenowany przez swojego Seniora uczy
                         się najlepszych praktyk w komercyjnym kodzie. Jego wysoki poziom fundamentów programowania
                         oraz Javy czynią z niego perfekcyjnego programistę wykonawcę. </p>
@@ -234,17 +242,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-5 col-xxl-5 about-card-column-left">
+            <div class="col-12 mt-4 mt-md-0 col-md-5 col-xxl-5 about-card-column-right">
               <div class="about-card ">
                 <div class="container card-inside">
                   <div class="row card-inside-row">
-                    <div class="col-0 mt-4">
+                    <div class="col-0 mt-3">
                       <h4>Jakub Psuja</h4>
                     </div>
                   </div>
                   <div class="row card-inside-row">
                     <div class="col-12 mb-4">
-                      <img src="https://unsplash.it/401" alt="">
+                      <img src="./imgs/profilePictures/KubaP.jpg" class="profile-img" alt="Zdjęcie Jakuba Psuji">
                       <p id="person-bio">Junior Backend Developer. Nowy nabytek Origami Projects, który czyni firmę
                         kompletną poprzez wielki ogrom pracy, który wkłada w tworzenie swoich rozwiązań. Chętny do
                         pracy zdyscyplinowany, wywiązujący się z obowiązków. Idealny Junior. </p>
@@ -297,9 +305,8 @@
           <div class="row justify-content-around gx-xl-5  ">
             <div class="col-md-12 col-xl-6 ml-1 kontaktformdiv">
               <h3>Porozmawiajmy!</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sequi ex fugiat vel eos
-                consectetur quasi? In nobis aspernatur excepturi repellendus numquam ullam cupiditate
-                nostrum sint porro. .</p>
+              <p>Opowiedz nam bliżej o swoim projekcie, a my go zrealizujemy. Do każdego projektu wycena jest kompletnie
+                indywidualna, a czasami nawet jej nie ma</p>
             </div>
             <div id="form-row" class="col-md-12 col-xl-6 ml-5 mr-1 mt-3 justify-content-center form-row">
 
@@ -328,9 +335,11 @@
         <h1>Origami Projects</h1>
         <p>Z pasją do technologii</p>
         <ul class="socials">
-          <li><a href="https://www.facebook.com/OrigamiProjectsPolska"><i class="fa fa-facebook"></i></a>
+          <li><a href="https://www.facebook.com/OrigamiProjectsPolska"><i class="fa fa-facebook"
+                alt="Facebook Icon"></i></a>
           </li>
-          <li><a href="https://www.instagram.com/origami_projects_polska/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.instagram.com/origami_projects_polska/"><i class="fa fa-instagram"
+                alt="Instagram Icon"></i></a></li>
         </ul>
       </div>
       <div class="footer-bottom">

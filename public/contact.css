@@ -1,8 +1,6 @@
-
 .contact-section {
   margin-bottom: 228px !important;
 }
-
 
 .kontaktformdiv p {
   text-align: center;
@@ -14,8 +12,6 @@
 .kontaktformdiv {
   padding: 0px 25px 0px 50px;
 }
-
-
 
 .form-row h6 {
   text-align: center;
@@ -115,13 +111,11 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-
   /* .kontaktformdiv h4 {
     font-size: 3.4rem !important;
   } */
   .kontaktformdiv p {
     font-size: 1.2rem;
-  
   }
   #form-row h6 {
     text-align: center;
@@ -135,18 +129,15 @@ textarea {
     /* padding-bottom: 35px; */
   }
 
-  form{
+  form {
     min-width: 70% !important;
   }
 
-   
-.form-row h6{
+  .form-row h6 {
     margin-bottom: 25px;
   }
-
 }
 
- 
 @media screen and (max-width: 1000px) {
   .kontaktformdiv {
     padding: 0;
@@ -155,23 +146,19 @@ textarea {
   .form-div {
     width: 55%;
     height: auto;
-    
   }
   .form-in {
     min-width: 80%;
   }
 }
 
-
 @media screen and (max-width: 500px) {
   .form-div {
     width: 80%;
     height: auto;
-    
   }
 
   form {
-    
     min-width: 75%;
   }
 }
@@ -181,10 +168,7 @@ textarea {
     min-width: 80%;
   }
 
-
-
   .form-div {
-    width: 95% ;
-   
+    width: 95%;
   }
 }
