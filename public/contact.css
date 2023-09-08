@@ -1,30 +1,27 @@
+.form-row h6,
+.kontaktformdiv p {
+  text-align: center;
+  color: #2b2149;
+}
 .contact-section {
   margin-bottom: 228px !important;
 }
-
 .kontaktformdiv p {
-  text-align: center;
   font-size: 1.4rem;
-  color: #2b2149;
-  padding: 0px 14% 0px 14%;
+  padding: 0 14%;
 }
-
 .kontaktformdiv {
-  padding: 0px 25px 0px 50px;
+  padding: 0 25px 0 50px;
 }
-
 .form-row h6 {
-  text-align: center;
   font-size: 2.5rem;
-  color: #2b2149;
   margin-top: 12%;
   font-weight: 600;
   margin-bottom: 5%;
 }
-
 .form-div {
   max-width: 500px;
-  margin: 25px auto 0px auto;
+  margin: 25px auto 0;
   background-color: #5e548e;
   max-height: 620px;
   border: 1px solid #413768;
@@ -32,51 +29,43 @@
   width: 100%;
   height: auto;
 }
-
 .form {
   height: 60%;
   padding-top: 5%;
 }
-
 form {
-  /* min-width: 432px; */
   width: 100%;
-  margin: 45px auto 45px auto;
-  padding: 0px 10px 0px 10px;
+  margin: 45px auto;
+  padding: 0 10px;
 }
-
 .feedback-input {
-  color: black;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
-  background-color: white;
-  border: 2px solid white;
-  transition: all 0.3s;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: 0.3s;
   padding: 13px;
   margin-bottom: 25px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
 }
-
 .feedback-input:focus {
-  border: 2px solid white;
+  border: 2px solid #fff;
 }
-
 textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
 }
-
 .flexa {
   display: flex;
   justify-content: center;
 }
-
 .send {
   align-self: center;
   width: 60%;
@@ -84,36 +73,29 @@ textarea {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: white;
+  color: #fff;
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: -4px auto 0px auto;
-  transition: all 0.3s;
-
+  margin: -4px auto 0;
+  transition: 0.3s;
   font-weight: 700;
 }
 .send:hover {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
-
 @media screen and (max-width: 1680px) {
   #form-row h6 {
     text-align: center;
   }
-
   .form-div {
     display: flex;
     justify-content: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
   }
 }
-
 @media screen and (max-width: 1200px) {
-  /* .kontaktformdiv h4 {
-    font-size: 3.4rem !important;
-  } */
   .kontaktformdiv p {
     font-size: 1.2rem;
   }
@@ -122,27 +104,20 @@ textarea {
     font-size: 2rem;
     margin-top: 8%;
   }
-
   .form-div {
-    /* height: 85%; */
     width: 70%;
-    /* padding-bottom: 35px; */
   }
-
   form {
     min-width: 70% !important;
   }
-
   .form-row h6 {
     margin-bottom: 25px;
   }
 }
-
 @media screen and (max-width: 1000px) {
   .kontaktformdiv {
     padding: 0;
   }
-
   .form-div {
     width: 55%;
     height: auto;
@@ -151,23 +126,19 @@ textarea {
     min-width: 80%;
   }
 }
-
 @media screen and (max-width: 500px) {
   .form-div {
     width: 80%;
     height: auto;
   }
-
   form {
     min-width: 75%;
   }
 }
-
 @media screen and (max-width: 414px) {
   form {
     min-width: 80%;
   }
-
   .form-div {
     width: 95%;
   }
